@@ -33,5 +33,5 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    artifactName: 'war__$(build.sourceVersion)'
+    artifactName: 'war__$(build.buildId)'
     pathToPublish: '$(build.artifactStagingDirectory)'
